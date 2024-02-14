@@ -7,6 +7,6 @@ async function bootstrap() {
   moment.locale('es');
   app.enableCors();
   app.setGlobalPrefix('api')
-  await app.listen(3005);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
